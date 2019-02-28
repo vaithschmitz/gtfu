@@ -1,0 +1,13 @@
+{
+  "name": "gtfu",
+  "version": "0.0.1",
+  "description": "get the fuck up",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^4.0.6"
+  }
+}

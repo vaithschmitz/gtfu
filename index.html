@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>GTFU!</title>
+  </head>
+  <body>
+    <h1 id="time">WHAT TIME IS IT?</h1>
+    <br />
+    <button id="start" onclick="startTime()">CLICK ME</button>
+  </body>
+  <script>
+    function $(x) {
+      return document.getElementById(x);
+    }
+
+    function startTime() {
+      let x = $("start");
+      clock();
+      x.remove(x);
+    }
+
+    function clock() {
+      let time = new Date();
+      let hour = time.getHours();
+      let minute = time.getMinutes();
+      let second = time.getSeconds();
+      $("time").textContent = hour + ":" + minute + ":" + second;
+      setTimeout(clock, 1000);
+    }
+  </script>
+</html>
